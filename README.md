@@ -51,18 +51,10 @@ Shows how customer values are distributed, highlighting the skew toward lower CL
 # CLV Segmentation
 Displays the number of customers in Low, Medium, and High CLV tiers.  
 
-
 ---
 
 ## Deliverables
 - **`CLV_Segmented_Customers.xlsx`** → Customer IDs with calculated CLV and segment  
-
----
-
-## Next Steps
-1. Flag **Top 20% VIP customers** for personalized campaigns.  
-2. Integrate **predictive CLV modeling** using BG/NBD + Gamma-Gamma models.  
-3. Schedule the **pipeline to run automatically** for new incoming data.  
 
 ---
 This project helps businesses identify, retain, and maximize value from their most profitable customers.
