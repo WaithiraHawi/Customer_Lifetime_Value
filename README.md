@@ -19,9 +19,7 @@ The goal of this project is to **identify high-value customers** by calculating 
 ## CLV Calculation
 CLV is calculated using the formula:
 
-\[
-CLV = Average\ Purchase\ Amount \times Purchase\ Frequency \times Membership\ Tenure
-\]
+CLV=Average Purchase Amount×Purchase Frequency×Membership Tenure
 
 This gives an **estimate of the total revenue a customer generates** during their relationship with the company.
 
@@ -58,8 +56,6 @@ Displays the number of customers in Low, Medium, and High CLV tiers.
 
 ## Deliverables
 - **`CLV_Segmented_Customers.xlsx`** → Customer IDs with calculated CLV and segment  
-- **`clv_distribution.png`** → CLV distribution plot  
-- **`clv_segmentation.png`** → Customer segmentation visualization  
 
 ---
 
