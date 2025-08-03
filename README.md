@@ -1,11 +1,11 @@
 # Customer Lifetime Value (CLV) Analysis
 
-## 1. Objective
+## Objective
 The goal of this project is to **identify high-value customers** by calculating their **Customer Lifetime Value (CLV)** and segmenting them into actionable categories for marketing and retention strategies.
 
 ---
 
-## 2. Dataset Overview
+## Dataset Overview
 - **Number of Customers:** 100  
 - **Key Features:**
   - `Customer ID` – Unique customer identifier  
@@ -16,7 +16,7 @@ The goal of this project is to **identify high-value customers** by calculating 
 
 ---
 
-## 3. CLV Calculation
+## CLV Calculation
 CLV is calculated using the formula:
 
 \[
@@ -27,7 +27,7 @@ This gives an **estimate of the total revenue a customer generates** during thei
 
 ---
 
-## 4. Customer Segmentation
+## Customer Segmentation
 Customers are segmented into **Low**, **Medium**, and **High CLV tiers** using quantiles (bottom 33%, middle 33%, top 33%).
 
 | CLV Segment | Description | Strategy |
@@ -38,39 +38,35 @@ Customers are segmented into **Low**, **Medium**, and **High CLV tiers** using q
 
 ---
 
-## 5. Key Insights
+## Key Insights
 - Most customers fall into the **Low and Medium CLV categories**, confirming a **Pareto distribution** where a small group of customers generates the majority of revenue.  
 - **High CLV customers** are prime targets for loyalty and retention initiatives.  
 - The **CLV distribution is right-skewed**, indicating a concentration of value in a few customers.
 
 ---
 
-## 6. Visualizations
+## Visualizations
 
-### a. CLV Distribution
+# CLV Distribution
 Shows how customer values are distributed, highlighting the skew toward lower CLV customers.  
 
-![CLV Distribution](clv_output/clv_distribution.png)
-
-### b. CLV Segmentation
+# CLV Segmentation
 Displays the number of customers in Low, Medium, and High CLV tiers.  
 
-![CLV Segmentation](clv_output/clv_segmentation.png)
 
 ---
 
-## 7. Deliverables
+## Deliverables
 - **`CLV_Segmented_Customers.xlsx`** → Customer IDs with calculated CLV and segment  
 - **`clv_distribution.png`** → CLV distribution plot  
 - **`clv_segmentation.png`** → Customer segmentation visualization  
 
 ---
 
-## 8. Next Steps
+## Next Steps
 1. Flag **Top 20% VIP customers** for personalized campaigns.  
 2. Integrate **predictive CLV modeling** using BG/NBD + Gamma-Gamma models.  
 3. Schedule the **pipeline to run automatically** for new incoming data.  
 
 ---
-
-## 🔹 Project Structure
+This project helps businesses identify, retain, and maximize value from their most profitable customers.
