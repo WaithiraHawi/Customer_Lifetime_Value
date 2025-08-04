@@ -151,6 +151,9 @@ total_spent → Most important driver
 purchase_history → Moderate impact
 
 tenure → Moderate impact
+<img width="1024" height="1536" alt="CLV" src="https://github.com/user-attachments/assets/519acdfd-bb25-4512-8cd0-bb5b635bbc87" />
+
+
 
 ## Marketing Campaigns Based on CLV Segmentation
 After analysis, customers were segmented into three CLV tiers using quantile-based segmentation (Low, Medium, High CLV).
