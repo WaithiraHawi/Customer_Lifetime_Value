@@ -3,7 +3,6 @@
 ## Objective
 The goal of this project is to understand customer lifetime value and the key drivers. 
 
----
 
 # **Customer Lifetime Value (CLV) Analysis**
 
@@ -17,9 +16,8 @@ This project analyzes a dataset of **1,000 customers** to understand **Customer 
 
 The analysis focuses on **exploratory data analysis (EDA), segmentation, and insights** to support **customer profitability and retention strategies**.
 
----
 
-## **1. Dataset Overview**
+## **Dataset Overview**
 
 * **Shape:** 1,000 rows × 5 columns
 * **Data Quality:** No missing values
@@ -29,9 +27,9 @@ The analysis focuses on **exploratory data analysis (EDA), segmentation, and ins
   * Customers show a wide range of **purchase histories (5 to 50+ orders)**
   * Higher **total spend and tenure** strongly align with **higher CLV**
 
----
 
-## **2. CLV Distribution**
+
+## **CLV Distribution**
 
 * The **CLV distribution is right-skewed**, meaning:
 
@@ -39,9 +37,9 @@ The analysis focuses on **exploratory data analysis (EDA), segmentation, and ins
   * **A small group of high-value customers** contribute disproportionately to revenue
 * **Implication:** Retention strategies should prioritize **top-tier customers** for loyalty programs.
 
----
 
-## **3. Top and Bottom Customers**
+
+## **Top and Bottom Customers**
 
 | **Top 3 Customers** | **CLV** |
 | ------------------- | ------- |
@@ -58,9 +56,9 @@ The analysis focuses on **exploratory data analysis (EDA), segmentation, and ins
 * **Top 10 customers** account for a significant portion of total CLV
 * **Bottom customers** are low-engagement and low-spend
 
----
 
-## **4. Correlation Insights**
+
+## **Correlation Insights**
 
 Correlation analysis of numeric features shows:
 
@@ -74,9 +72,9 @@ Correlation analysis of numeric features shows:
 
 > **CLV is primarily driven by total spending, followed by purchase frequency and tenure.**
 
----
 
-## **5. Customer Segmentation**
+
+## **Customer Segmentation**
 
 Using **tertile-based segmentation (Low, Medium, High CLV)**:
 
@@ -99,18 +97,18 @@ Using **tertile-based segmentation (Low, Medium, High CLV)**:
 * **High CLV customers** are the backbone of revenue → target them for retention & upselling
 * **Low CLV customers** are likely new or disengaged → focus on reactivation campaigns
 
----
 
-## **6. Visual Insights**
+
+## **Visual Insights**
 
 1. **CLV Distribution** → Highly skewed with few high-value outliers
 2. **Scatter Plots** → CLV rises sharply with **total spend and purchase history**
 3. **Heatmap** → Strong correlation between **spending behavior** and **CLV**
 4. **Segment Countplot** → Even segmentation into Low, Medium, High tiers
 
----
 
-## **7. Key Business Takeaways**
+
+## **Key Business Takeaways**
 
 * **80/20 Rule Applies**: A small group of customers drives the majority of lifetime value
 * **Spending Drives CLV**: Encourage repeat purchases via loyalty programs or discounts
@@ -120,3 +118,51 @@ Using **tertile-based segmentation (Low, Medium, High CLV)**:
   * **Medium CLV** → Upsell and convert to high-tier
   * **Low CLV** → Engage with reactivation campaigns
 
+## Predictive Modeling for CLV
+The goal is to predict the future Customer Lifetime Value (CLV) for new or existing customers based on historical purchase behavior.
+
+Features (X):
+
+purchase_history → Number of purchases made
+
+tenure → Duration of customer relationship (months)
+
+total_spent → Total spending by the customer
+
+Target (y):
+
+CLV → Customer Lifetime Value to predict
+
+## Model Training
+
+The model uses Random Forest Regressor with 200 trees to capture non-linear relationships between spending behavior and CLV.
+
+Random Forest is ideal as it handles numeric features well, is robust to outliers and provides feature importance insights. 
+
+# Model Evaluation
+The model is highly predictive as the CLV variance is ~ 92%
+Root Mean Squared Error (RMSE): Measures average prediction error
+
+Feature Importance
+The drivers of CLV are: 
+
+total_spent → Most important driver
+
+purchase_history → Moderate impact
+
+tenure → Moderate impact
+
+## Marketing Campaigns Based on CLV Segmentation
+After analysis, customers were segmented into three CLV tiers using quantile-based segmentation (Low, Medium, High CLV).
+
+With segmentation, the model implies: 
+
+High-value customers need retention strategies such as VIP loyalty perks, early access to products, premium offers.
+
+Medium-value customers benefit from upsell & cross-selling of complementary products, and discounts to raise engagement.  
+
+Low-value customers need reactivation and engagement campaigns, welcome discounts and referral incentives. 
+
+Business Impact
+The strategy aligns marketing spend with customer profitability, ensuring resources are focused on high-return customers while still nurturing lower-tier customers to increase lifetime value.
+With the predictive model and CLV marketing campaigns, there will be improvement on ROI on marketing and retention efforts, targeted campaigns for each segment and predictive the expected future potential revenue per customer. 
